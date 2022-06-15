@@ -2,9 +2,9 @@ name: Build and push Docker containers
 on: push
 jobs: 
   build-container:
-  name: Build container
-  runs-on: ubuntu-20.04
-  steps:
+    name: Build container
+    runs-on: ubuntu-20.04
+    steps:
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Login to Docker GitHub
