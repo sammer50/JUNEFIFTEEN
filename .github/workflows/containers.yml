@@ -17,5 +17,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: samascown/nextwebapp:${{ githb.run_number }}
+        tags: samascown/nextwebapp:${{ github.run_number }}
 
