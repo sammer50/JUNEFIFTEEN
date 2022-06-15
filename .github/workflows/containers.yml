@@ -1,0 +1,13 @@
+name: Build and push Docker containers
+on: push
+jobs: 
+  name: build container
+  runs-on: ubuntu-20.04
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Login to Docker GitHub
+      uses: docker/login-action@v1
+      with: 
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_ACCESS_TOCKEN }}
