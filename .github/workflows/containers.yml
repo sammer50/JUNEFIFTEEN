@@ -1,7 +1,8 @@
 name: Build and push Docker containers
 on: push
 jobs: 
-  name: build container
+  build-container:
+  name: Build container
   runs-on: ubuntu-20.04
   steps:
     - name: Checkout code
